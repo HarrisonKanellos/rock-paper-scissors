@@ -1,12 +1,22 @@
 function getComputerChoice() {
-    let n = Math.random();
-    if (n <= 0.33) {
+    let cChoice = Math.random();
+    if (cChoice <= 0.33) {
         return "rock";
     }
-    else if (n <= 0.66) {
+    else if (cChoice <= 0.66) {
         return "paper";
     } 
     else {
         return "scissors";
     }
 }
+
+function getHumanChoice() {
+    let hChoice;
+    do {
+        hChoice = prompt("rock, paper, scissors");
+    }
+    while (hChoice != "rock" && hChoice != "paper" && hChoice != "scissors")
+    return hChoice;
+}
+
