@@ -1,6 +1,5 @@
 function getComputerChoice() {
     let n = Math.random();
-    console.log(n);
     if (n <= 0.33) {
         return "rock";
     }
@@ -11,5 +10,3 @@ function getComputerChoice() {
         return "scissors";
     }
 }
-
-console.log(getComputerChoice());
