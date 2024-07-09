@@ -1,3 +1,7 @@
+//global variables
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let cChoice = Math.random();
     if (cChoice <= 0.33) {
