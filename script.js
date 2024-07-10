@@ -93,9 +93,14 @@ function playGame() {
     if (humanScore > computerScore) {
         console.log("You win Rock, Paper, Scissors!")
     }
-    else {
+    else if (humanScore < computerScore) {
         console.log("You lose the game :(")
     }
+    else {
+        console.log("The game is a draw!")
+    }
+
+    // Final results
     console.log("---Here are the final scores---")
     console.log("Your Score: " + humanScore);
     console.log("Computer Score: " + computerScore)
