@@ -74,21 +74,6 @@ function playGame() {
     let humanSelect;
     let computerSelect;
 
-    // For loop to play 5 rounds
-    for (let i = 0; i < 5; i++) {
-
-        // Get human and computer choice for round
-        humanSelect = getHumanChoice();
-        computerSelect = getComputerChoice();
-
-        // Play a round
-        playRound(humanSelect, computerSelect);
-        
-        console.log("---Round " + (i + 1) + " Scores--- ")
-        console.log("Your Score: " + humanScore);
-        console.log("Computer Score: " + computerScore)
-    }
-
     // Declare winner
     if (humanScore > computerScore) {
         console.log("You win Rock, Paper, Scissors!")
